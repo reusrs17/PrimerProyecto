@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taller de base de datos</title>
+    <style>
+
+        body {
+            text-align: center;
+            background-color: rgb(0, 255, 179); /* Fondo azul */
+        }
+        form {
+            display: inline-block;
+            background-color: rgb(102, 255, 0);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"] {
+            background-color: rgb(111, 255, 159);
+            color: rgb(6, 6, 6);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .mensaje {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 120px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje">Aqui puedes exportar tu base de datos</div>
+    <form action="exportar.php" method="post">
+        <input type="submit" name="exportar" value="Exportar Base de datos">
+    </form>
+</body>
+</html>
